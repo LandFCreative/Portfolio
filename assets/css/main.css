@@ -2338,19 +2338,26 @@ input, select, textarea {
     }
 }
 
-.resume-block {
-	text-align: left;
+.resume-summary {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	font-size: 0.9rem;
 }
 
-.resume-block h3 {
-	margin-bottom: 0.25rem;
+.resume-summary h3 {
+	font-size: 1rem;
+	margin-bottom: 0.75rem;
 }
 
-.resume-block h4 {
-	margin-top: 2rem;
-	margin-bottom: 0.5rem;
+.resume-summary p,
+.resume-summary li {
+	font-size: 0.9rem;
+	line-height: 1.6;
 }
 
-.resume-block ul {
-	margin-left: 1.25rem;
+@media screen and (max-width: 736px) {
+	.resume-summary {
+		grid-template-columns: 1fr;
+	}
 }
