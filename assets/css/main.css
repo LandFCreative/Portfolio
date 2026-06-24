@@ -2364,3 +2364,16 @@ input, select, textarea {
 .resume-summary ul {
 	margin-left: 1rem;
 }
+
+
+/* Portfilio button */
+.portfolio-download {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.portfolio-button {
+	background-color: #99c68e !important;
+	color: #ffffff !important;
+	border: none !important;
+}
