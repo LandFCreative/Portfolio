@@ -2338,22 +2338,29 @@ input, select, textarea {
     }
 }
 
+
+/* Resume */
 .resume-summary {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	font-size: 0.9rem;
+	gap: 1.5rem;
+	font-size: 0.8rem;
+	text-align: left;
 }
 
 .resume-summary h3 {
-	font-size: 1rem;
-	margin-bottom: 0.75rem;
+	font-size: 0.95rem;
+	margin-bottom: 0.5rem;
 }
 
 .resume-summary p,
 .resume-summary li {
-	font-size: 0.9rem;
-	line-height: 1.6;
+	font-size: 0.8rem;
+	line-height: 1.45;
+}
+
+.resume-summary ul {
+	margin-left: 1rem;
 }
 
 @media screen and (max-width: 736px) {
