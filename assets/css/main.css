@@ -2383,29 +2383,32 @@ input, select, textarea {
 	border-radius: 3rem;
 }
 
-/* Contact Information */
 
-.contact-info {
-	margin-top: 2rem;
-	text-align: left;
+/* Contact */
+
+.contact-card {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.contact-info p {
+.contact-card p {
+	margin: 2rem 0;
 	font-size: 1.1rem;
-	margin-bottom: 1.25rem;
 }
 
-.contact-info .icon {
-	width: 2rem;
+.contact-card .icon {
+	font-size: 2rem;
 	color: #4d7c59;
-	margin-right: 0.75rem;
+	margin-bottom: 0.75rem;
+	display: block;
 }
 
-.contact-info a {
-	text-decoration: none;
+.contact-card a {
 	border-bottom: none;
+	text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-card a:hover {
 	color: #4d7c59;
 }
