@@ -2382,3 +2382,30 @@ input, select, textarea {
 	border: none !important;
 	border-radius: 3rem;
 }
+
+/* Contact Information */
+
+.contact-info {
+	margin-top: 2rem;
+	text-align: left;
+}
+
+.contact-info p {
+	font-size: 1.1rem;
+	margin-bottom: 1.25rem;
+}
+
+.contact-info .icon {
+	width: 2rem;
+	color: #4d7c59;
+	margin-right: 0.75rem;
+}
+
+.contact-info a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.contact-info a:hover {
+	color: #4d7c59;
+}
