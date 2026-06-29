@@ -547,9 +547,12 @@ input, select, textarea {
 				line-height: 1.5em;
 			}
 
-a.button.style2.down,
-	a.button.style2.down.anchored {
+/* Hide all down arrows on mobile */
+	a.button.style2.down,
+	a.button.style2.down.anchored,
+	.button.style2.down {
 		display: none !important;
+		visibility: hidden !important;
 	}
 
 		}
