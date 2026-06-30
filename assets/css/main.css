@@ -2424,27 +2424,51 @@ input, select, textarea {
 
 /* ---------- Intro ---------- */
 
-#intro .intro-arrow {
-	grid-column: 1 / -1;
-	text-align: center;
-	margin-top: 2rem;
+#intro .intro-wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
-#intro .intro-next {
-	display: inline-flex;
+#intro .intro-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 4rem;
 	align-items: center;
-	justify-content: center;
-	width: 3.25rem;
-	height: 3.25rem;
-	border-radius: 50%;
-	border: 2px solid #ffffff;
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 0;
 }
 
-#intro .intro-next:before {
-	content: "⌄";
-	font-size: 2rem;
-	line-height: 1;
+#intro .intro-photo img {
+	width: 100%;
+	max-width: 320px;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	border-radius: 28px;
+	display: block;
+	margin: 0 auto;
+}
+
+#intro .intro-text {
+	text-align: left;
+}
+
+#intro .intro-footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 2.5rem;
+	clear: both;
+	position: relative;
+}
+
+@media screen and (max-width: 736px) {
+	#intro .intro-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	#intro .intro-text {
+		text-align: center;
+	}
+
+	#intro .intro-photo img {
+		max-width: 220px;
+	}
 }
