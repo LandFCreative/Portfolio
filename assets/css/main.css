@@ -2,7 +2,7 @@
 @import url("fontawesome-all.min.css");
 
 /*
-	Big Picture by HTML5 UP
+	General Template is Big Picture by HTML5 UP with modification by Christine Deneschuk using GitHub 
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -2424,34 +2424,27 @@ input, select, textarea {
 
 /* ---------- Intro ---------- */
 
-#intro .intro-wrapper {
-	max-width: 1100px;
-	margin: 0 auto;
-}
-
-#intro .intro-grid {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 3rem 4rem;
-	align-items: center;
-}
-
-#intro .intro-photo img {
-	width: 100%;
-	max-width: 320px;
-	aspect-ratio: 4 / 5;
-	object-fit: cover;
-	border-radius: 28px;
-	display: block;
-	margin: 0 auto;
-}
-
-#intro .intro-text {
-	text-align: left;
-}
-
 #intro .intro-arrow {
 	grid-column: 1 / -1;
 	text-align: center;
-	margin-top: 1rem;
+	margin-top: 2rem;
+}
+
+#intro .intro-next {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.25rem;
+	height: 3.25rem;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0;
+}
+
+#intro .intro-next:before {
+	content: "⌄";
+	font-size: 2rem;
+	line-height: 1;
 }
