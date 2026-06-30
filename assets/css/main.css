@@ -2427,13 +2427,12 @@ input, select, textarea {
 #intro .intro-wrapper {
 	max-width: 1100px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 #intro .intro-grid {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	gap: 4rem;
+	gap: 3rem 4rem;
 	align-items: center;
 }
 
@@ -2452,24 +2451,7 @@ input, select, textarea {
 }
 
 #intro .intro-arrow {
-	display: block;
-	width: 100%;
+	grid-column: 1 / -1;
 	text-align: center;
-	margin-top: 2.5rem;
-	clear: both;
-}
-
-@media screen and (max-width: 736px) {
-	#intro .intro-grid {
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-	}
-
-	#intro .intro-text {
-		text-align: center;
-	}
-
-	#intro .intro-photo img {
-		max-width: 220px;
-	}
+	margin-top: 1rem;
 }
