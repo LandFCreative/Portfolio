@@ -2455,9 +2455,10 @@ input, select, textarea {
 	text-align: left;
 }
 
-.intro-arrow {
-	text-align: center;
-	margin-top: 2.5rem;
+.intro-arrow{
+    width:100%;
+    text-align:center;
+    margin-top:2rem;
 }
 
 
