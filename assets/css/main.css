@@ -2420,3 +2420,59 @@ input, select, textarea {
 .contact-card a:hover {
 	color: #4d7c59;
 }
+
+
+/* ==========================
+   INTRO LAYOUT
+========================== */
+
+.intro-grid {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.intro-photo {
+	flex: 1;
+}
+
+.intro-photo img {
+	width: 100%;
+	max-width: 320px;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 28px;
+	display: block;
+	margin: auto;
+
+	box-shadow: 0 20px 45px rgba(0,0,0,.18);
+}
+
+.intro-text {
+	flex: 2;
+}
+
+.intro-text h2 {
+	margin-bottom: 1rem;
+}
+
+.intro-text p {
+	margin-bottom: 1.25rem;
+	line-height: 1.8;
+}
+
+@media screen and (max-width: 736px){
+
+	.intro-grid{
+		flex-direction: column;
+		text-align:center;
+		gap:2rem;
+	}
+
+	.intro-photo img{
+		max-width:220px;
+	}
+
+}
